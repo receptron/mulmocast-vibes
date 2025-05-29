@@ -1346,22 +1346,6 @@ beats:
           <Card>
             <CardContent className="p-4">
               <div className="space-y-4">
-                {/* Output Buttons */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <Button className="flex flex-col items-center space-y-2 h-auto py-4">
-                    <Monitor className="w-6 h-6" />
-                    <span>Generate Movie</span>
-                  </Button>
-                  <Button className="flex flex-col items-center space-y-2 h-auto py-4">
-                    <FileText className="w-6 h-6" />
-                    <span>Generate PDF</span>
-                  </Button>
-                  <Button className="flex flex-col items-center space-y-2 h-auto py-4">
-                    <Globe className="w-6 h-6" />
-                    <span>Generate HTML</span>
-                  </Button>
-                </div>
-
                 {/* Select Presentation Style */}
                 <div className="space-y-4">
                   <div className="flex flex-col text-sm font-medium mb-2">
@@ -1482,6 +1466,7 @@ beats:
                     </div>
                   </div>
                 </div>
+
                 {/* Caption Toggle */}
                 <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                   <div className="flex flex-col">
@@ -1500,6 +1485,22 @@ beats:
                     checked={captionEnabled}
                     onCheckedChange={setCaptionEnabled}
                   />
+                </div>
+
+                {/* Output Buttons */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <Button className="flex flex-col items-center space-y-2 h-auto py-4">
+                    <Monitor className="w-6 h-6" />
+                    <span>Generate Movie</span>
+                  </Button>
+                  <Button className="flex flex-col items-center space-y-2 h-auto py-4">
+                    <FileText className="w-6 h-6" />
+                    <span>Generate PDF</span>
+                  </Button>
+                  <Button className="flex flex-col items-center space-y-2 h-auto py-4">
+                    <Globe className="w-6 h-6" />
+                    <span>Generate HTML</span>
+                  </Button>
                 </div>
               </div>
             </CardContent>
