@@ -17,7 +17,7 @@ MulmoCastは、クロスプラットフォームのコンテンツクリエイ�
 ## 📋 前提条件
 
 - Node.js 20以上
-- npm または yarn
+- npm
 
 ## 🛠️ セットアップ
 
@@ -25,7 +25,7 @@ MulmoCastは、クロスプラットフォームのコンテンツクリエイ�
 
 ```bash
 git clone <repository-url>
-cd mulmocast-dashboard
+cd <folder-name>
 npm install
 ```
 
@@ -40,25 +40,6 @@ npm run dev
 - バックエンド: Expressサーバー
 
 アプリケーションは自動的に `http://localhost:3001` でアクセスできるようになります。
-
-## 📝 利用可能なスクリプト
-
-```bash
-# 開発サーバーを起動
-npm run dev
-
-# プロダクション用ビルド
-npm run build
-
-# プロダクションサーバーを起動
-npm start
-
-# TypeScript型チェック
-npm run check
-
-# データベーススキーマをプッシュ
-npm run db:push
-```
 
 ## 🏗️ プロジェクト構造
 
@@ -89,18 +70,6 @@ npm run db:push
 - 🖥️ **デスクトップアプリ**: Electronによるネイティブアプリ
 - 📊 **ダッシュボード**: プロジェクト管理とメディア生成
 
-## 🔑 環境変数（必要に応じて）
-
-プロジェクトで外部APIを使用する場合は、以下の環境変数を設定してください：
-
-```bash
-# OpenAI API (AI機能用)
-OPENAI_API_KEY=your_openai_api_key
-
-# データベース接続 (PostgreSQL使用時)
-DATABASE_URL=your_database_url
-```
-
 ## 🔍 開発のヒント
 
 1. **コンポーネント開発**: `client/src/components/` でUIコンポーネントを作成
@@ -129,7 +98,7 @@ Error: connect ECONNREFUSED 127.0.0.1:1106
 これは正常な動作です。アプリケーションはローカル開発モードで動作し、ファイルアップロード機能は模擬的に動作します。Replit環境では完全に動作します。
 
 ### ポート競合エラー
-既にポート5000が使用されている場合は、他のアプリケーションを停止するか、設定を変更してください。
+既にポート3001が使用されている場合は、他のアプリケーションを停止するか、設定を変更してください。
 
 ### 依存関係エラー
 ```bash
