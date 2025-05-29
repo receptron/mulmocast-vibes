@@ -690,7 +690,7 @@ const Project: React.FC = () => {
 
                     {/* テンプレート選択セクション */}
                     <div className="template-section">
-                      <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
+                      <div className="rounded-lg p-1">
                         <label className="text-sm font-medium text-gray-700 mb-3 block">
                           To create a script with the content so far, please
                           select a template and press the Create button.
