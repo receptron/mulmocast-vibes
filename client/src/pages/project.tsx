@@ -1499,7 +1499,7 @@ beats:
                   </Button>
                   <Button className="flex flex-col items-center space-y-2 h-auto py-4">
                     <Globe className="w-6 h-6" />
-                    <span>Generate HTML</span>
+                    <span>Generate Podcast</span>
                   </Button>
                 </div>
               </div>
