@@ -5,17 +5,15 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  root: "client-vue",
   server: {
     port: 5173,
     host: "0.0.0.0",
-    allowedHosts: true,
   },
   build: {
-    outDir: "../dist-vue",
+    outDir: "dist",
   },
   css: {
-    postcss: "../postcss.config.js",
+    postcss: "./postcss.config.js",
   },
   resolve: {
     alias: {
