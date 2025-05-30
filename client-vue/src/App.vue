@@ -1,3 +1,4 @@
+
 <template>
   <div id="app" class="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
     <header class="border-b border-gray-200 dark:border-gray-700">
