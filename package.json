@@ -53,7 +53,7 @@
     "date-fns": "^3.6.0",
     "drizzle-orm": "^0.39.1",
     "drizzle-zod": "^0.7.0",
-    "electron": "^36.3.1",
+    "electron": "^36.8.1",
     "embla-carousel-react": "^8.6.0",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
